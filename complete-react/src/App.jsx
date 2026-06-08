@@ -3,7 +3,8 @@ import Components from './Components'
 import {Components2,name} from './Components'
 import { Exercise01 } from './Exercise01'
 import Function from './Function'
-import States from './States'
+import States, { Number,Car,CarDetail } from './States'
+import Toggle from './Toggle'
 
 const App = () => {
   return (
@@ -14,6 +15,10 @@ const App = () => {
      <Exercise01/>
      <Function/>
      <States/>
+     <Number/>
+     <Car/>
+     <CarDetail/>
+     <Toggle/>
     </div>
   )
 }
