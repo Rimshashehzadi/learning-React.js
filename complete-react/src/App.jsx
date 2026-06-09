@@ -5,10 +5,12 @@ import { Exercise01 } from './Exercise01'
 import Function from './Function'
 import States, { Number,Car,CarDetail } from './States'
 import Toggle from './Toggle'
+import Header from './Header'
 
 const App = () => {
   return (
     <div className='max-w-4xl mx-auto p-4'>
+      <Header/>
      <Components/>
      <Components2/>
      {/* <h2>{name}</h2> */}
@@ -19,6 +21,7 @@ const App = () => {
      <Car/>
      <CarDetail/>
      <Toggle/>
+     
     </div>
   )
 }
