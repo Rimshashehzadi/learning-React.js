@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Statee = () => {
+const Hooks = () => {
   return (
-    <div>Statee</div>
+    <div>Hooks</div>
   )
 }
 
-export default Statee
+export default Hooks
