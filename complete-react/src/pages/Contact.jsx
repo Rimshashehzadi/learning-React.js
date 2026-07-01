@@ -3,6 +3,8 @@ import User from '../User'
 import College from '../College'
 import Student from '../Student'
 import Custom from '../Custom'
+import InputField from '../InputField'
+import Skills from '../Skills'
 
 const Contact = () => {
   //  let name = 'USMAN';
@@ -38,6 +40,8 @@ const Contact = () => {
       <button onClick={()=> setname('Bilal')} className='p-4 bg-blue-500 text-white'>click for change name</button>
     <Custom name =' r imsha'/>
     {/* <Custom name= 'Ali'/> */}
+    <InputField/>
+    <Skills/>
     </div>
   )
 }

@@ -3,6 +3,7 @@ import { useState } from "react";
 import { RxCross2 } from "react-icons/rx";
 import { RxHamburgerMenu } from "react-icons/rx";
 import Button from '../Button'
+import RadioDropdown from "../RadioDropdown";
 const Hooks = () => {
     // let fruit = 'Apple'
     const [fruit, setFruit] = useState('Apple')
@@ -76,7 +77,7 @@ const Hooks = () => {
 
                     </div>
                 )}
-
+<RadioDropdown/>
         </div>
     )
 }
