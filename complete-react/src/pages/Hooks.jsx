@@ -5,6 +5,7 @@ import { RxHamburgerMenu } from "react-icons/rx";
 import Button from '../Button'
 import RadioDropdown from "../RadioDropdown";
 import Map from '../Map'
+import UseEffect from "../UseEffect";
 const Hooks = () => {
     // let fruit = 'Apple'
     const [fruit, setFruit] = useState('Apple')
@@ -40,6 +41,8 @@ const Hooks = () => {
                 <button className="p-6 bg-amber-600 text-amber-50 rounded-2xl" onClick={() => setIsVisible(!isVisible)}>Toggle</button>
                 {isVisible ? <h1 className="text-4xl font-bold">This is Toggle</h1> : null}
             </div>
+            <br/>
+            <UseEffect/>
             {/* header using toggle button */}
             <div className="flex justify-between items-center p-4 bg-amber-500 text-amber-50 rounded-2xl mt-4">
                 <div>logo</div>
