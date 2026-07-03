@@ -1,8 +1,11 @@
 import React from 'react'
 import { useState, useEffect } from 'react'
+import HandleProps from './HandleProps'
 const UseEffect = () => {
     const [count, setCount] = useState(0)
     const [data, setData] = useState(0)
+    const[counter, setCounter] = useState(0)
+    const[data1, setData1] = useState(0)
     function onceCalled() {
 
         console.log("This function is called only once when the component is mounted.")
@@ -26,8 +29,9 @@ const UseEffect = () => {
             <button onClick={() => setCount(count + 1)} className='bg-blue-600 text-amber-50 p-3'>Click Me</button>
             <p>Data: {data}</p>
             <button onClick={() => setData(data + 1)} className='bg-green-600 text-amber-50 p-3'>Update Data</button>
-
-
+            <HandleProps counter={counter} data1={data1} />
+            <button onClick={()=>setCounter(counter + 1)} className='bg-blue-600 text-amber-50 p-3'>Click Me</button>
+<button onClick={()=>setData1(data1 + 1)} className='bg-green-600 text-amber-50 p-3'>Update Data</button>
         </div>
     )
 }
